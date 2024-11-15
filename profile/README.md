@@ -6,21 +6,21 @@ For a more in depth look we would recommend looking into the [toolkit documentat
 
 ## Repository Overview
 
-### 2. `toolkit_docs`
+### 1. `toolkit_docs`
 - **Language**: TypeScript
-- **Description**: The repository for the Toolkit Project’s documentation, built with Docusaurus. It provides guides, reference materials, and explanations for setting up and managing toolkit projects, integrating canisters, and using the toolkit's features.
+- **Description**: The repository for the Toolkit documentation, built with Docusaurus. It provides guides, reference materials, and explanations for setting up and managing toolkit projects, integrating canisters, and using the toolkit's features.
 
 ### 1. `toolkit_frontend`
 - **Language**: Svelte
-- **Description**: The frontend application for the Toolkit, providing users with an intuitive interface to manage their toolkit projects, canisters, and SNS configurations. This UI simplifies project interactions, making it easy for users to deploy and monitor canisters.
+- **Description**: The frontend application for the Toolkit, providing users with an intuitive interface to manage their toolkit projects, canisters, and SNSes. This UI simplifies project interactions, making it easy for users to deploy and monitor canisters.
 
 ### 2. `toolkit_registry`
 - **Language**: Rust
-- **Description**: Acts as the registry for all toolkit projects, tracking each project’s components, settings, and metadata. This canister ensures that each project’s configuration is securely stored and easily accessible.
+- **Description**: Acts as the registry for all toolkit and SNS projects the user follows, and keeps track of privately owned canisters
 
 ### 3. `project_root_registry`
 - **Language**: Rust
-- **Description**: Serves as the controller for all custom root canisters within the toolkit. This registry keeps track of custom roots and can initiate upgrades when required, providing centralized control over multiple projects.
+- **Description**: Serves as the controller for all custom root canisters within the toolkit. This registry keeps track of custom roots and can initiate upgrades when required.
 
 ### 4. `project_root`
 - **Language**: Rust
@@ -32,7 +32,7 @@ For a more in depth look we would recommend looking into the [toolkit documentat
 
 ### 6. `proposal_validator`
 - **Language**: Rust
-- **Description**: A public repository for validating proposals within the toolkit. This canister is responsible for ensuring that all submitted proposals meet predefined standards, making the governance process more secure and reliable.
+- **Description**: A public repository for validating SNS proposals for executing generic nervous system functions.
 
 ---
 
